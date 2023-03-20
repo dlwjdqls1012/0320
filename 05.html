@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert(){
+            alert("알림메시지가 출력되는 내장함수 alert()");
+        }
+    </script>
+</head>
+<body>
+    <form action="resut.html" method="post">
+        학교명: <input type="text" size="15" name="schoolname" placeholder="학교명과 전공"><br>
+        성명: <input type="text" size="15" name="ID" placeholder="성명"><br>
+        비밀번호: <input type="password" size="15" name="pwd"><br>
+        성별: <input type="radio" name="gender" value="female">여성 &nbsp; 성별: <input type="radio" name="gender" value="male" checked>남성<br>
+        <!-- 라디오버튼은 하나의 그룹 중에 하나만 선택되야 하기에 같은 그룹으로 존재해야됨 -->
+        파일: <input type="file" name="filel"><br>
+        취미: <input type="checkbox" name="read">독서 | <input type="checkbox" name="movie">영화 | <input type="checkbox" name="travel" checked>여행 <br>
+        보이지않는 data: <input type="hidden" name="page" value="10"> <br>
+        <br>
+        <input type="image" src="http://via.placeholder.com/100x100"> <br>
+        <button type="reset">취소버튼</button>
+        <button type="submit">전송버튼</button>
+        <button type="button" onclick="callAlert()">일반버튼</button>
+        <!-- JavaScript 함수 호출 할 때 많이 사용 -->
+    </form>
+</body>
+</html>
